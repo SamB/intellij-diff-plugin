@@ -25,11 +25,6 @@ plugins {
     id 'com.github.ManifestClasspath' version '0.1.0-RELEASE' // required in Windows
 }
 
-wrapper {
-    gradleVersion = '6.7.1'
-}
-
-
 group = 'de.thomasrosenau'
 
 sourceCompatibility = 1.8
