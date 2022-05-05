@@ -133,6 +133,11 @@ task generateDiffParser(type: GenerateParser) {
     purgeOldFiles true
 }
 
+compileJava {
+    dependsOn generateDiffLexer
+    dependsOn generateDiffParser
+}
+
 clean {
     delete genSrcPath
 }
